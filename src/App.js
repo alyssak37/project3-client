@@ -6,13 +6,8 @@ import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-
 import { Switch, Route } from 'react-router-dom';
-// create 4 page components , login signup dashboard home
-// define as function and export them 
-// return a div with text content 
-//import them into APP.js
-// import switch from React Router then define various routes
+import { useState, useEffect } from 'react';
 
 function App() {
   return (
@@ -27,7 +22,7 @@ function App() {
               <Dashboard />
             } />
             <Route exact path="/signup" render={props =>
-              <Signup />
+              <Signup {...props}/>
             } />
             <Route exact path="/login" render={props =>
               <Login />
