@@ -1,9 +1,19 @@
-function dashboard(props) {
+
+import FactCard from '../../components/FactCard/FactCard';
+
+function Dashboard(props) {
+
+
+    function handleClick() {
+        window.location.reload()
+    }
     return (
         <div>
-            Dashboard
+            <FactCard catFact={props.catfact}/>
+            <p>{props.factData.fact}</p>
+            <button onClick={handleClick}>Next Fact</button>
         </div>
     )
 }
 
-export default dashboard;
+export default Dashboard;

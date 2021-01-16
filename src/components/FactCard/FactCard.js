@@ -1,9 +1,10 @@
 
+
 function factCard(props) {
-    
+
     return (
-        <div>
-            
+        <div className='card'>
+            <p>{props.catFact}</p>
         </div>
     )
 }
