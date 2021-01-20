@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
+import Favorites from './pages/Favorites';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
 
 import './App.css';
@@ -48,7 +49,7 @@ function App(props) {
   
   return (
     <div className="App">
-      
+    
       <Header handleLogout={handleLogout} user={userState.user} />
         <main>
           <Switch>
@@ -71,7 +72,11 @@ function App(props) {
               handleSignupOrLogin={handleSignupOrLogin}
               />
             } />
-            <FactCard />
+            <Route exact path="/favorites" render={props =>
+            <Favorites {...props}
+            />
+          } />
+            <FactCard catFact={factData.fact}/>
         </Switch>
         <div>
           {factData.fact}
