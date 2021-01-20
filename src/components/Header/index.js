@@ -16,6 +16,9 @@ function Header(props) {
                         <li>
                         <Link to="/dashboard">Dashboard</Link>
                         </li>
+                        <li>
+                        <Link to="/favorites">Favorites</Link>
+                        </li>
                     </>
                     :
                     <>

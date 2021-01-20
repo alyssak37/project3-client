@@ -41,12 +41,14 @@ function Login(props) {
                 onChange={handleChange}
                 name="email"
                 type="email"
+                placeholder="Email"
                 />
                 <input
                 value={formState.password}
                 onChange={handleChange}
                 name="password"
                 type="password"
+                placeholder="Password"
                 />
                 <button>Login</button>
             </form>
