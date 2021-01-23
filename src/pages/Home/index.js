@@ -1,8 +1,11 @@
+
+
 function Home(props) {
     return (
-        <div>
+        <h2>
             Welcome to Cat Facts! Please login or signup to start seeing your facts!
-        </div>
+        </h2>
+        
     )
 }
 

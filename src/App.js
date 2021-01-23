@@ -25,14 +25,7 @@ function App(props) {
     setUserState({ user: null });
     props.history.push('/');
   }
-  async function handleFavorite(fact) {
-        try {
-          const { data } = await addFavorite(factData, fact)
-          setFactData(data);
-        } catch (error) {
-
-      }
-  }
+  
   const [factData, setFactData] = useState({
     result: []
   });
@@ -54,7 +47,7 @@ function App(props) {
             } />
             <Route exact path="/dashboard" render={props =>
             userState.user ?
-              <Dashboard handleFavorite={handleFavorite} factData={factData}/>
+              <Dashboard factData={factData}/>
               :
               <Redirect to="/login" />
             } />
@@ -70,7 +63,6 @@ function App(props) {
             } />
             <Route exact path="/favorites" render={props =>
               <Favorites {...props}
-              handleFavorite={handleFavorite}
               />
             } />
         </Switch>

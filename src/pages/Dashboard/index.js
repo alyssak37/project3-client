@@ -10,7 +10,7 @@ function Dashboard(props) {
     return (
         <div className='dashboard'>
             <FactCard handleFavorite={props.handleFavorite} factData={props.factData}/>
-        <button onClick={handleClick}>Next Fact</button>
+        <button onClick={handleClick}>Next Fact🐾</button>
         
         </div>
     )

@@ -7,6 +7,7 @@
     color: white;
     box-shadow: 3px 3px 5px 3px lightgrey;
     font-family: monospace;
+    font-size: 20px;
 }
 
 .Header > nav > ul {
