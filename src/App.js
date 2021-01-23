@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 import { getUser, logout } from './services/userService';
 import { getFact } from './services/facts-api';
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom';
-import FactCard from './components/FactCard/FactCard';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-// import Favorites from './pages/Favorites';
+import Favorites from './pages/Favorites';
+import { addFavorite } from './services/facts-api';
 import './App.css';
 function App(props) {
   const [ userState, setUserState] = useState({
@@ -24,6 +24,14 @@ function App(props) {
     logout();
     setUserState({ user: null });
     props.history.push('/');
+  }
+  async function handleFavorite(fact) {
+        try {
+          const { data } = await addFavorite(factData, fact)
+          setFactData(data);
+        } catch (error) {
+
+      }
   }
   const [factData, setFactData] = useState({
     result: []
@@ -46,7 +54,7 @@ function App(props) {
             } />
             <Route exact path="/dashboard" render={props =>
             userState.user ?
-              <Dashboard factData={props.factData}/>
+              <Dashboard handleFavorite={handleFavorite} factData={factData}/>
               :
               <Redirect to="/login" />
             } />
@@ -60,12 +68,12 @@ function App(props) {
               handleSignupOrLogin={handleSignupOrLogin}
               />
             } />
-            {/* <Route exact path="/favorites" render={props =>
+            <Route exact path="/favorites" render={props =>
               <Favorites {...props}
+              handleFavorite={handleFavorite}
               />
-            } /> */}
+            } />
         </Switch>
-        <FactCard catFact={factData}/>
         </main>
       <Footer />
     </div>

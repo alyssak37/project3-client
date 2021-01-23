@@ -14,3 +14,14 @@ export function getFact() {
   
 }
 
+const BASE_URL = 'https://catfact.ninja/fact?max_length=140';
+
+function addFavorite() {
+    return fetch(BASE_URL + '/favorites', {
+    method: 'POST',
+}).then(res => res.json());
+}
+
+export {
+    addFavorite
+};

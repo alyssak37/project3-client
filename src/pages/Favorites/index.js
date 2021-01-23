@@ -1,6 +1,9 @@
+
+
 function Favorites(props) {
     <div>
-        Favorite Facts
+        Favorites
     </div>
+       
 }
 export default Favorites;
