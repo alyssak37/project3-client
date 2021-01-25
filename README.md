@@ -14,6 +14,5 @@
 
 # Unsolved Problems
 
-
 # Future Enhancements
 - I would like to eventially implement CRUD so a user could create, edit or delete a fact.

@@ -9,7 +9,7 @@ import Dashboard from './pages/Dashboard';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
 import Favorites from './pages/Favorites';
-import { addFavorite } from './services/facts-api';
+// import { addFavorite } from './services/facts-api';
 import './App.css';
 function App(props) {
   const [ userState, setUserState] = useState({
