@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function factCard(props) {
     function handleFavorite() {
-        
+        const favorite = [props.user.favorite]
     }
     return (
         <div className='card'>
