@@ -1,4 +1,4 @@
-# Cat Facts
+# Introduction
 - A fun app for cat lover's where you can learn new facts about them and save your favorite's as you learn!
 
 # Technologies Used
