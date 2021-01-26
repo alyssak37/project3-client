@@ -13,6 +13,7 @@
 # Screenshots
 ![home-page screenshot](https://user-images.githubusercontent.com/71416370/105903887-7681b800-5fee-11eb-8e78-32ba8217de0c.png)
 ![sign-up screenshot](https://user-images.githubusercontent.com/71416370/105903953-8a2d1e80-5fee-11eb-82f2-1883e073013b.png)
+![factcard screenshot](https://user-images.githubusercontent.com/71416370/105915067-41309680-5ffd-11eb-8fe6-f27d0fe60ef1.png)
 
 # Getting Started 
 - https://600f5f1d29124331dbe421ed--project-3-catfacts.netlify.app/login
