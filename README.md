@@ -10,6 +10,10 @@
 - CSS
 - HTML
 
+# Screenshots
+![home-page screenshot](https://user-images.githubusercontent.com/71416370/105903887-7681b800-5fee-11eb-8e78-32ba8217de0c.png)
+![sign-up screenshot](https://user-images.githubusercontent.com/71416370/105903953-8a2d1e80-5fee-11eb-82f2-1883e073013b.png)
+
 # Getting Started 
 - https://600f5f1d29124331dbe421ed--project-3-catfacts.netlify.app/login
 - https://trello.com/b/QQ7pgN9Y/project-3
@@ -19,4 +23,4 @@
 
 # Future Enhancements
 - Add images
-- I would like to eventially implement CRUD so a user could create, edit or delete a fact.
+- I would like to eventually implement CRUD so a user could create, edit or delete a fact.
