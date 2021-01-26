@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 // import { addFavorite } from '../../services/facts-api';
 
 // function factCard(props) {
-//     // function handleFavorite(fact) {
-//     //     const favorite = addFavorite(fact)
-//     //     return favorite;
-//     // }
+//     function handleFavorite(fact) {
+//         const favorite = addFavorite(fact)
+//         return favorite;
+//     }
     
 //     return (
 //         <div className='card'>

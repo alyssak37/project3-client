@@ -47,7 +47,7 @@ function App(props) {
             } />
             <Route exact path="/dashboard" render={props =>
             userState.user ?
-              <Dashboard  factData={factData}/>
+              <Dashboard factData={factData}/>
               :
               <Redirect to="/login" />
             } />

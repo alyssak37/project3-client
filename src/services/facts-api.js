@@ -23,11 +23,12 @@ function addFavorite() {
 }
 
 function getFavorite(){
-return fetch(BASE_URL + '/favorites', {
-    method: 'GET',
-}).then(res => res.json());
-}
+    return fetch(BASE_URL + '/favorites', {
+        method: 'GET',
+    }).then(res => res.json());
+    }
 
 export {
-    addFavorite
+    addFavorite,
+    getFavorite
 };
